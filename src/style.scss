@@ -1,0 +1,10 @@
+body {
+	background:red;
+	color :black;
+}
+$bluegrey : blue;
+
+div {
+  background: $bluegrey;
+  color: $bluegrey;
+}
