@@ -3,11 +3,14 @@ const webpack = require('webpack')
 const path = require('path')
 
 const config = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, ''),
   entry: './app.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
+  },
+  resolve: {
+    extensions:['.js','.css','.css']
   },
   module: {
     loaders: [{
